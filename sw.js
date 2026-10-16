@@ -9,7 +9,7 @@ self.addEventListener('fetch', event => {
   // Never handle authentication, database, rider, or non-GET requests.
   if (request.method !== 'GET' || url.origin !== scope.origin ||
       !url.pathname.startsWith(scope.pathname)) return;
-  event.respondWith(fetch(request).catch(() => {
+  event.respondWith(fetch(request, { cache: 'no-store' }).catch(() => {
     if (request.mode !== 'navigate') return Response.error();
     // Generic offline page contains no account or operational information.
     return new Response('<!doctype html><html lang="ar" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ToGo Leader</title><body style="font:18px sans-serif;padding:32px;background:#f5f1e9;color:#0f2238"><h1>ToGo Leader</h1><p>الاتصال بالإنترنت غير متاح. اتصل بالإنترنت ثم أعد فتح التطبيق.</p></body></html>', {
