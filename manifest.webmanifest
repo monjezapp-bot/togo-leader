@@ -1,34 +1,27 @@
 {
-  "id": "/togo-leader/",
-  "name": "ToGo Leader",
-  "short_name": "ToGo Leader",
-  "lang": "ar",
-  "dir": "rtl",
-  "start_url": "/togo-leader/",
-  "scope": "/togo-leader/",
-  "display": "standalone",
-  "background_color": "#f5f1e9",
-  "theme_color": "#0f2238",
-  "icons": [
-    {
-      "src": "1-leader-icon-option-01-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "2-leader-icon-option-01-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "1-leader-maskable-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ],
-  "description": "تطبيق إدارة ToGo",
-  "orientation": "portrait"
+ "name": "ToGo Leader",
+ "short_name": "ToGo Leader",
+ "description": "تطبيق إدارة ToGo",
+ "lang": "ar",
+ "dir": "rtl",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#0f2238",
+ "theme_color": "#0f2238",
+ "icons": [
+  {
+   "src": "1-leader-maskable-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any maskable"
+  },
+  {
+   "src": "1-leader-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
 }
